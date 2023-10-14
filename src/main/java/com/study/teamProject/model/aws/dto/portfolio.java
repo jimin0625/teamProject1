@@ -12,8 +12,8 @@ import lombok.Setter;
 //맨 처음에 방장이 방 만들 때 쓸 dto
 public class portfolio {
 
-    private String managerName;//방장 이름
+    //private String managerName;//방장 이름
 
-    private String managerEmail;//방장 이메일
+    //private String managerEmail;//방장 이메일
 
 }

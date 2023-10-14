@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class TestServiceImpl implements TestService {
     private final TestMapper testMapper;
-    //원래 final선언이었는데 오류나서 일단 뺌
+
     @Override
     public List<portfolio> getAllDataList() {
         return testMapper.getAllDataList();
