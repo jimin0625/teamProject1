@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+//@AllArgsConstructor
 //맨 처음에 방장이 방 만들 때 쓸 dto
 public class portfolio {
 

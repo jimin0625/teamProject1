@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.teamProject.model.aws.dao.ManagerMapper">
+
+    <insert id="getAllDataList" parameterType="com.study.teamProject.model.aws.dto.ManagerDTO">
+        <![CDATA[
+        INSERT INTO ROOMDATA_TB (MANAGER_NAME, MANAGER_EMAIL, ROOM_ID)
+        VALUES (#{managerDTO.managerName}, #{managerDTO.managerEmail}, #{managerDTO.roomId})
+        ]]>
+    </insert>
+
+</mapper>
