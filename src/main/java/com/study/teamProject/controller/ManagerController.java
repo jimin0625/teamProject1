@@ -23,7 +23,6 @@ public class ManagerController {
     @Transactional
     @PostMapping("/manager")
     public List<ManagerDTO> manager(@RequestBody ManagerDTO managerDTO) {
-        managerDTO.setRoomId(1);
         return managerService.getAllDataList();
     }
 
