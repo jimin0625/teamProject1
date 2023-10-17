@@ -5,10 +5,13 @@
 
 <mapper namespace="com.study.teamProject.model.aws.dao.ManagerMapper">
 
+    <select id="getAutoIncrementValue" resultType="int">
+        SELECT LAST_INSERT_ID()
+    </select>
     <insert id="getAllDataList" parameterType="com.study.teamProject.model.aws.dto.ManagerDTO">
         <![CDATA[
         INSERT INTO ROOMDATA_TB (MANAGER_NAME, MANAGER_EMAIL, ROOM_ID)
-        VALUES (#{managerDTO.managerName}, #{managerDTO.managerEmail}, #{managerDTO.roomId})
+        VALUES (#{managerDTO.managerName}, #{managerDTO.managerEmail}, LAST_INSERT_ID())
         ]]>
     </insert>
 

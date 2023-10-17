@@ -6,4 +6,5 @@ import org.springframework.transaction.annotation.Transactional;
 
 public interface ManagerService {
     public List<ManagerDTO> getAllDataList();
+    public int getAutoIncrementValue();
 }
